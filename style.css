@@ -4,17 +4,46 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+    margin: 0;
+    max-width: 90vw;
+    margin: auto;
 }
 
 h1, h2 {
     color: white;
+    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 a {
-    color: lightblue;
+    color: #00bfff; /* Azul mais vibrante para melhor contraste */
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #1e90ff; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    body {
+        font-size: 0.9rem;
+    }
 }
